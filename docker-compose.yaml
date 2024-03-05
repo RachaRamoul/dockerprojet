@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  php8-sf6:
+    image: php8-sf6-taguee
+    container_name: php8-sf6-taguee
+    ports:
+      - "9000:8000"
+    volumes:
+      - ./project:/var/www/html
+
+  database:
+    image: postgres-alpine-taguee
+    container_name: postgres-alpine-taguee
+    volumes:
+      - db-data:/var/lib/postgresql/data:rw
+    ports:
+      - "5432:5432"
+
+  adminer:
+    image: adminer-alpine-taguee
+    restart: always
+    ports:
+      - "3000:3000"
+
+volumes:
+  db-data:
