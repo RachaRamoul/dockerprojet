@@ -1,8 +1,7 @@
-RAMOUL Racha
-BIRABOURAME Hemavathi
 
 # Symfony 6 + PHP 8.0.13 with Docker
-
+RAMOUL Racha
+BIRABOURAME Hemavathi
 ## Run Locally
 
 Clone the project
